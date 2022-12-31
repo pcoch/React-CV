@@ -1,0 +1,128 @@
+/* Output Compnent */
+.OutputContainer {
+	display: flex;
+	flex-direction: column;
+	height: 700px;
+	gap: 30px;
+	padding: var(--main-gutter);
+	max-width: calc(595px - var(--main-gutter));
+}
+
+.OutputHeader {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+	padding-bottom: 30px;
+	border-bottom: 3px solid black;
+}
+
+.headerLeft {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 10px;
+}
+
+.headerRight {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	height: 100%;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.headerRight>span>svg {
+    margin-right: 10px;
+}
+
+h1 {
+	font-size: 38px;
+	font-weight: 800;
+	color: var(--main-txt-color);
+}
+
+h4 {
+	font-size: 20px;
+	font-weight: 400;
+	color: var(--snd-txt-color);
+	margin-top: 10px;
+}
+
+/* Work Experience */
+.experience-list {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+h3 {
+	font-size: 18px;
+	font-weight: 600;
+	color: var(--snd-txt-color);
+}
+
+h5 {
+	font-size: 14px;
+	font-weight: 800;
+	color: var(--main-txt-color);
+}
+
+.company-title {
+	font-weight: 400;
+}
+
+.experience-container {
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.experience-heading {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* Education */
+.education-list {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+h3 {
+	font-size: 18px;
+	font-weight: 600;
+	color: var(--snd-txt-color);
+}
+
+h5 {
+	font-size: 14px;
+	font-weight: 800;
+	color: var(--main-txt-color);
+}
+
+.university-title {
+	font-weight: 400;
+}
+
+.education-container {
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.education-heading {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}

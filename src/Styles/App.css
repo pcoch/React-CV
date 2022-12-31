@@ -1,0 +1,120 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Main Stlyes */
+:root {
+	--main-bg-color: #f8fafc;
+	--main-txt-color: #1e293b;
+
+	--snd-bg-color: #f1f5f9;
+	--snd-txt-color: #334155;
+
+	--main-gutter: 50px;
+	--snd-gutter: 20px;
+
+	--box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	--box-shadow-alt: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+
+	--border-radius: 7px;
+}
+
+body {
+	background-color: var(--main-bg-color);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.9rem;
+	line-height: 1.1rem;
+}
+
+h2 {
+	font-size: 18px;
+	font-weight: 700;
+	color: var(--main-txt-color);
+	padding-left: 5px;
+}
+
+h2:not(.first-title){
+	margin-top: var(--main-gutter);
+}
+
+.first-title {
+	margin-top: var(--snd-gutter);
+}
+
+/* App Component */
+.App {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+    gap: 40px;
+	height: 100%;
+	width: 100vw;
+	margin-top: var(--main-gutter);
+	margin-bottom: var(--main-gutter);
+}
+
+.OutputContainer, .InputContainer {
+	box-shadow: var(--box-shadow);
+	border-radius: var(--border-radius);
+	width: 595px;
+	height: auto;
+	padding: var(--snd-gutter);
+}
+
+@media only screen and (max-width: 1230px) {
+	.App {
+		height: auto;
+		width: 100vw;
+	}
+	
+	.OutputContainer, .InputContainer {
+		margin-left: var(--main-gutter);
+		margin-right: var(--main-gutter);
+	}
+}
